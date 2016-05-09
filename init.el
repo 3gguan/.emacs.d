@@ -2,6 +2,11 @@
 
 (setq debug-on-error t)
 
+;;c-mode缩进
+(setq tab-width 4)
+(setq default-tab-width 4)
+(setq c-basic-offset 4)
+
 ;; 括号匹配时显示另外一边的括号，而不是烦人的跳到另一个括号
 (show-paren-mode t)
 (setq show-paren-style 'parentheses)
@@ -35,3 +40,4 @@
 
 ;;符号高亮功能
 (require 'init-highlight)
+
