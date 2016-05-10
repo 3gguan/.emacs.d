@@ -2,10 +2,28 @@
 
 (setq debug-on-error t)
 
+(global-set-key "\C-ck" 'kill-whole-line)
+
 ;;c-mode缩进
 (setq tab-width 4)
 (setq default-tab-width 4)
-(setq c-basic-offset 4)
+(setq c-default-style "linux"
+           c-basic-offset 4)
+
+;;y-n代替yes-no
+(fset 'yes-or-no-p 'y-or-n-p)
+
+;;标题栏显示buffer
+(setq frame-title-format "%b@emacs")
+
+;;支持emacs和外部程序粘贴
+(setq x-select-enable-clipboard t)
+
+;;不生成 #filename# 临时文件  
+(setq auto-save-default nil)
+
+;;不要生成临时文件
+(setq make-backup-files nil)
 
 ;; 括号匹配时显示另外一边的括号，而不是烦人的跳到另一个括号
 (show-paren-mode t)
@@ -41,3 +59,4 @@
 ;;符号高亮功能
 (require 'init-highlight)
 
+(require 'init-gcstyle)
