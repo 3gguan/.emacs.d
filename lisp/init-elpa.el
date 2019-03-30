@@ -2,10 +2,10 @@
 (package-initialize)
  
 ;;增加elpa源
-(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
-						 ("marmalade" . "https://marmalade-repo.org/packages/")
-						 ("melpa" . "https://melpa.org/packages/")
-						 ("org" . "http://orgmode.org/elpa/")
-						 ("popkit" . "http://elpa.popkit.org/packages/")))
+(setq package-archives '(("gnu" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+						 ("marmalade" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/marmalade/")
+						 ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+						 ("org" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
+						 ("melpa-stable" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa-stable/")))
 
 (provide 'init-elpa)

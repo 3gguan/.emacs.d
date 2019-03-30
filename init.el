@@ -1,6 +1,13 @@
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
 
-(setq debug-on-error t)
+;;(setq debug-on-error t)
 
 (global-set-key "\C-ck" 'kill-whole-line)
 
@@ -60,3 +67,19 @@
 (require 'init-highlight)
 
 (require 'init-gcstyle)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ecb-options-version "2.50")
+ '(package-selected-packages
+   (quote
+    ;;(window-numbering highlight-symbol ecb color-theme-molokai color-theme auto-complete))))
+    (window-numbering highlight-symbol ecb color-theme-Gray30 color-theme auto-complete))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
