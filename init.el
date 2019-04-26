@@ -11,12 +11,6 @@
 
 (global-set-key "\C-ck" 'kill-whole-line)
 
-;;c-mode缩进
-(setq tab-width 4)
-(setq default-tab-width 4)
-(setq c-default-style "linux"
-           c-basic-offset 4)
-
 ;;y-n代替yes-no
 (fset 'yes-or-no-p 'y-or-n-p)
 
@@ -67,6 +61,14 @@
 (require 'init-highlight)
 
 (require 'init-gcstyle)
+
+;;c-mode缩进
+(setq-default tab-width 4)
+(setq tab-width 4)
+(setq c-basic-offset 4)
+(setq c-default-style "linux")
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
